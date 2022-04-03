@@ -55,7 +55,7 @@ def print_path_info(path: str):
     if S_ISDIR(pstat.st_mode):
         print("Entries:")
         for entry in os.listdir(path):
-            print(entry)
+            print(f"  - {entry}")
 
 
 def show_usage():
